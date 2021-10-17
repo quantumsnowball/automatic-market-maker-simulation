@@ -2,7 +2,7 @@ from models import ConstantProductInvariant
 
 
 def main():
-    amm = AMM('BTC-ETH', 1494, 23220)
+    amm = ConstantProductInvariant('BTC-ETH', 1494, 23220)
     print(f'old price: {amm.price}')
     # print(f'Product after swap: {amm.k}')
     print(f'new price: {amm.quote(.01)}')
